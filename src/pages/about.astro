@@ -1,0 +1,39 @@
+---
+import Layout from "../layouts/Layout.astro";
+const technologies = ["Javascript", "Typescript", "React", "Vue", "Astro", "Tailwind", "Docker", "Electron", "C#", "Go"];
+---
+
+<Layout title="About">
+  <section id="about" class="mb-16 scroll-mt-16 text-stone-300 md:mb-24 lg:mb-36 lg:scroll-mt-24" aria-label="About me">
+    <!-- <div
+      class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0"
+    >
+      <h2 class="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">About</h2>
+    </div> -->
+
+    <h2 class="text-sm font-bold uppercase tracking-widest text-orange-300">About</h2>
+    <div>
+      <p class="mb-4">
+        Hey there! I'm Fatih, a passionate developer with a hunger for learning and a knack for picking up new technologies
+        quickly. With a patient demeanor and a dedication to clear communication, I strive to deliver top-notch results for
+        every project I take on. My journey in the world of development has been marked by a relentless pursuit of knowledge.
+        Whether it's mastering the latest framework or diving into a new programming language, I thrive on the challenge of
+        expanding my skill set.
+      </p>
+    </div>
+    <div>
+      <h2 class="text-sm font-bold uppercase tracking-widest text-orange-300">Skills</h2>
+      <ul class="mt-2 flex flex-wrap" aria-label="Technologies used:">
+        {
+          technologies.map((tech) => (
+            <li class="mr-1.5 mt-2">
+              <div class="flex items-center rounded-full bg-orange-400/10 px-3 py-1 text-xs font-medium leading-5 text-orange-300">
+                {tech}
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+</Layout>

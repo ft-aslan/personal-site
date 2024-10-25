@@ -1,0 +1,72 @@
+---
+import ProjectCard from "@/components/ProjectCard.astro";
+import Layout from "@/layouts/Layout.astro";
+---
+
+<Layout title="Personal Projects">
+  <section
+    id="personal-projects"
+    class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
+    aria-label="Personal projects"
+  >
+    <h2 class="mb-6 text-sm font-bold uppercase tracking-widest text-orange-300">Personal Projects</h2>
+    <div>
+      <ul class="group/list">
+        <li class="mb-12">
+          <ProjectCard
+            name="Downite"
+            link="https://github.com/ft-aslan/downite"
+            image="/downite-logo.png"
+            technologies={["React", "TypeScript", "Tanstack", "Tailwind", "Go", "Bun", "Vite", "CSS"]}
+          >
+            <p slot="description" class="mt-2 text-sm leading-normal">
+              This project is a self-hostable torrent and HTTP download client designed to run on the same server. It
+              provides a robust solution for managing and downloading torrents and files, all from a unified interface. Also
+              working on porting the project as a desktop application.
+            </p>
+          </ProjectCard>
+        </li>
+        <li class="mb-12">
+          <ProjectCard
+            name="Lango"
+            link="https://github.com/ft-aslan/lango"
+            technologies={["Svelte", "TypeScript", "Electron", "CSS", "Node", "Electron", "Vite"]}
+          >
+            <p slot="description" class="mt-2 text-sm leading-normal">
+              A language translation tool for all desktop platforms. Also has english dictionary and english slang
+              dictionary. You can save the translation to your word book if you want. Also screenshot translation with a AI
+              model is planned.
+            </p>
+          </ProjectCard>
+        </li>
+      </ul><div class="mt-12">
+        <a
+          class="group inline-flex items-center font-medium font-semibold leading-tight text-stone-200"
+          aria-label="View Full Project Archive"
+          href="/archive"
+          ><span
+            ><span
+              class="border-b border-transparent pb-px transition group-hover:border-orange-300 motion-reduce:transition-none"
+              >View Full Project<!-- -->
+            </span><span class="whitespace-nowrap"
+              ><span
+                class="border-b border-transparent pb-px transition group-hover:border-orange-300 motion-reduce:transition-none"
+                >Archive</span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="-transtone-y-px group-hover:transtone-x-2 group-focus-visible:transtone-x-2 ml-1 inline-block h-4 w-4 shrink-0 transition-transform motion-reduce:transition-none"
+                aria-hidden="true"
+                ><path
+                  fill-rule="evenodd"
+                  d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
+                  clip-rule="evenodd"></path></svg
+              ></span
+            ></span
+          ></a
+        >
+      </div>
+    </div>
+  </section>
+</Layout>

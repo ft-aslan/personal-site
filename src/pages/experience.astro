@@ -1,0 +1,73 @@
+---
+import ExperienceCard from "@/components/ExperienceCard.astro";
+import Layout from "@/layouts/Layout.astro";
+---
+
+<Layout title="Experience">
+  <section id="experience" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24" aria-label="Work experience">
+    <h2 class="mb-6 text-sm font-bold uppercase tracking-widest text-orange-300">Experience</h2>
+    <ol class="group/list">
+      <li class="mb-12">
+        <ExperienceCard
+          name="Netvizyon"
+          role="Software Developer"
+          link="www.simsar.com"
+          start="2019"
+          end="2024"
+          technologies={["JavaScript", "Vue", "TypeScript", "HTML", "CSS"]}
+        >
+          <p slot="description" class="mt-2 text-sm leading-normal">
+            Worked as a front-end software developer for 5 years, primarily focused on developing and maintaining a custom
+            content management system (CMS) tailored to client needs. Played a key role in designing and implementing
+            responsive, user-friendly interfaces, ensuring seamless user experiences across platforms. Worked on integrating
+            front-end solutions with back-end services. In addition to the CMS, contributed to various custom e-commerce
+            projects, developing visually appealing, performance-optimized front-end components using modern frameworks and
+            tools. Gained proficiency in HTML, CSS, JavaScript, Vue, and other front-end technologies, delivering
+            high-quality solutions that met business goals and enhanced user engagement.
+          </p>
+        </ExperienceCard>
+      </li>
+
+      <li class="mb-12">
+        <ExperienceCard
+          name="Sakarya University - Istanbul / Turkey"
+          role="Bachelor’s Degree, Computer Education and Instructional Technologies Student"
+          link="https://bote.sakarya.edu.tr/en/icerik/0/112775/hakkinda"
+          start="2015"
+          end="2019"
+        >
+          <p slot="description" class="mt-2 text-sm leading-normal">
+            Graduated with a comprehensive understanding of both computer science and educational technology. Gained strong
+            foundational knowledge in programming, software development, and instructional design. Developed skills in
+            various programming languages.
+          </p>
+        </ExperienceCard>
+      </li>
+    </ol>
+    <div class="mt-12">
+      <a
+        class="group/link inline-flex items-baseline text-base font-medium font-semibold leading-tight text-stone-200 hover:text-orange-300 focus-visible:text-orange-300"
+        href="/resume.pdf"
+        target="_blank"
+        rel="noreferrer noopener"
+        aria-label="View Full Résumé (opens in a new tab)"
+        ><span
+          >View Full<!-- -->
+          <span class="inline-block"
+            >Résumé<svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              class="transtone-y-px group-hover/link:-transtone-y-1 group-hover/link:transtone-x-1 group-focus-visible/link:-transtone-y-1 group-focus-visible/link:transtone-x-1 ml-1 inline-block h-4 w-4 shrink-0 transition-transform motion-reduce:transition-none"
+              aria-hidden="true"
+              ><path
+                fill-rule="evenodd"
+                d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                clip-rule="evenodd"></path></svg
+            ></span
+          ></span
+        ></a
+      >
+    </div>
+  </section>
+</Layout>
