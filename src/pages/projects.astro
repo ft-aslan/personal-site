@@ -9,14 +9,81 @@ import Layout from "@/layouts/Layout.astro";
     <div>
       <ul class="group/list">
         <li class="mb-12">
-          <ProjectCard name="CMS System" link="#" technologies={["Vue", "TypeScript", "Vite", "CSS"]}>
-            <p slot="description" class="mt-2 text-sm leading-normal"></p>
+          <ProjectCard
+            name="Simsar Reimagined"
+            link="#"
+            technologies={[
+              "React",
+              "TypeScript",
+              "Vite",
+              "NodeJS",
+              "Tanstack Query",
+              "Tanstack Start",
+              "ShadcnUI",
+              "OpenAPI v3",
+              ".NET 9",
+            ]}
+          >
+            <div slot="description" class="mt-2 text-sm leading-normal">
+              <p>
+                <b>Objective:</b> Rewriting the legacy Simsar project using modern software tools and libraries to achieve cross-platform
+                compatibility, with the web as the primary platform.
+              </p>
+              <p>
+                <b>Overview:</b> Addressed core design flaws from the original Simsar system while retaining its key principles.
+                Collaborated with the original Simsar designers and maintainers for insights and best practices. Focused on implementing
+                a modern, scalable, and efficient frontend architecture.
+              </p>
+              <p>
+                <b>My Contributions:</b>
+                Designed and developed the entire frontend for the application, ensuring a responsive and user-friendly experience.
+                Built a frontend server to support Server-Side Rendering (SSR). Implemented an authentication proxy from my SSR
+                server to main .NET server. Stored and managed the session data by using SQLite. Leveraged OpenAPI for automated
+                TypeScript code generation, enabling dynamic updates to the frontend whenever server endpoints changed. Optimized
+                data fetching and caching to minimize unnecessary server requests and enhance performance.
+              </p>
+            </div>
+          </ProjectCard>
+        </li>
+        <li class="mb-12">
+          <ProjectCard name="Simsar Web Panel" link="#" technologies={["Vue", "TypeScript", "Vite"]}>
+            <div slot="description" class="mt-2 text-sm leading-normal">
+              <p>
+                <b>Objective:</b> Created a responsive web panel for Simsar to provide cross-platform accessibility beyond Windows.
+              </p>
+              <p>
+                <b>Overview:</b> Addressed the limitations of the original WPF-based Simsar application by creating a web-based
+                solution for basic user needs. Designed and developed the web panel from the ground up, including custom UI components
+                and Figma designs.
+              </p>
+              <p>
+                <b>My Contributions:</b> Designed and implemented the entire web panel, ensuring a responsive and user-centric
+                interface. Created custom UI components to meet specific project requirements. Built Figma designs from scratch
+                to guide development and ensure a consistent user experience. Extended the functionality of the existing API where
+                possible to support essential user features.
+              </p>
+            </div>
           </ProjectCard>
         </li>
 
         <li class="mb-12">
-          <ProjectCard name="E-Commerce Frontend" link="#" technologies={["Vue", "TypeScript", "Vite", "CSS"]}>
-            <p slot="description" class="mt-2 text-sm leading-normal"></p>
+          <ProjectCard name="CMS System" link="#" technologies={["Vue", "TypeScript", "Vite", "CSS"]}>
+            <div slot="description" class="mt-2 text-sm leading-normal">
+              <p>
+                <b>Objective:</b> Developed a CMS system to render web pages for client businesses using data from Simsar, enabling
+                seamless website management and customization.
+              </p>
+              <p>
+                <b>Overview:</b> Designed and implemented responsive, user-friendly interfaces to provide an optimal user experience
+                across platforms. Integrated front-end solutions with back-end services for smooth data rendering and functionality.
+                Developed a website design editor to allow customers to customize their company websites effectively.
+              </p>
+              <p>
+                <b>My Contributions:</b> Designed and implemented the entire web panel, ensuring a responsive and user-centric
+                interface. Created custom Vue UI components to support dynamic and responsive design requirements. Designed all
+                Figma mockups and prototypes to align with user needs and project goals.
+              </p>
+            </div>
           </ProjectCard>
         </li>
       </ul><div class="mt-12">
